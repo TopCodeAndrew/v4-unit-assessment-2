@@ -35,7 +35,15 @@ let foods = [
   and then adding the results together. 
 */
 
-//CODE HERE
+/* 
+1. create a calories property in each object in the array
+2. assign to the calories property = (carbs * 4) + (protein * 4) + (fat * 9)
+
+*/
+
+foods.forEach((element, index, array) => {
+  foods[index].calories = (foods[index].carbs * 4) + (foods[index].protein * 4) + (foods[index].fat * 9);
+})
 
 //////////////////////////////////PROBLEMS 2-4//////////////////////////////////
 /*
@@ -80,8 +88,12 @@ const products = [
   Save the copy to a new variable called 'saleProducts'.
 */
 
-//CODE HERE
+let saleProducts = products.map((el, i, arr) => {
+  arr[i].price = arr[i].price *.75;
+  return arr[i];
+})
 
+// console.log("saleProducts", saleProducts)
 ////////////////////PROBLEM 3////////////////////
 /*
   A customer has placed an order - they want one of every product that has blue on it. 
@@ -90,7 +102,7 @@ const products = [
   (Hint: look up the array method 'includes' on MDN)
 */
 
-//CODE HERE
+let blueProducts = saleProducts.filter((el, i, arr) => arr[i].color.includes("blue"))
 
 ////////////////////PROBLEM 4////////////////////
 /*
@@ -99,7 +111,19 @@ const products = [
   Save the result to a variable called orderTotal.
 */
 
-//CODE HERE
+let orderTotal = blueProducts.reduce((acc, el, i, arr) => {
+  acc += arr[i].price;
+  return acc
+},0 ) 
+
+
+
+
+
+
+
+
+
 
 //////////////////////////////////PROBLEMS 5-8//////////////////////////////////
 /*
@@ -129,7 +153,8 @@ const shippingInfo = {
   that combines the contactInfo and shippingInfo objects.
 */
 
-//CODE HERE
+let helensInfo = Object.assign(contactInfo, shippingInfo)
+// console.log(helensInfo)
 
 ////////////////////PROBLEM 6////////////////////
 /*
@@ -138,7 +163,7 @@ const shippingInfo = {
   Overwrite the name property to 'Ellen' and the email address to 'ellen@email.com'.
 */
 
-//CODE HERE
+let ellensInfo = [...helensInfo]
 
 ////////////////////PROBLEM 7////////////////////
 /* 
@@ -154,6 +179,16 @@ const shippingInfo = {
 */
 
 //CODE HERE
+
+
+
+
+
+
+
+
+
+
 
 //////////////////////////////////PROBLEMS 9-11//////////////////////////////////
 /*
