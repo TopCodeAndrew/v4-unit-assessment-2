@@ -169,14 +169,18 @@ const helensInfo = Object.assign(contactInfo, shippingInfo)
   Overwrite the name property to 'Ellen' and the email address to 'ellen@email.com'.
 */
 
-let ellensInfo = [...helensInfo];
+let ellensInfo = {...helensInfo};
+
+ellensInfo.name = "Ellen"
+
+ellensInfo.email = "ellen@email.com"
 
 ////////////////////PROBLEM 7////////////////////
 /* 
   Save Ellen's email to a new variable using destructuring.
 */
 
-//CODE HERE
+let {email} = ellensInfo
 
 ////////////////////PROBLEM 8////////////////////
 /*
@@ -184,7 +188,7 @@ let ellensInfo = [...helensInfo];
   from shippingInfo to new variables using destructuring.
 */
 
-//CODE HERE
+let {zipCode, state} = shippingInfo
 
 
 
@@ -256,7 +260,7 @@ const userInfo = {
   using dot notation.
 */
 
-//CODE HERE
+let shouldAlert = userInfo.settings.alerts
 
 ////////////////////PROBLEM 10////////////////////
 /*
@@ -264,7 +268,7 @@ const userInfo = {
   using dot and/or bracket notation.
 */
 
-//CODE HERE
+let topic = userInfo.topics[3]
 
 ////////////////////PROBLEM 11////////////////////
 /*
@@ -272,7 +276,7 @@ const userInfo = {
   gn@rly_c0der_007's 2nd comment using dot/bracket notation.
 */
 
-//CODE HERE
+let commenterId = userInfo.comments[1].responses[0].userId
 
 ////////////////////PROBLEM 12////////////////////
 /*
@@ -291,7 +295,31 @@ const userInfo = {
       - create at least 2 kid objects
 */
 
-//CODE HERE
+let person = {
+  name: "Andrew",
+  age: 26,
+  jobs: ["custodian", "librarian", "loan officer"],
+  birthday: function(){
+    this.age += 1;
+  },
+  favorites: {
+    color: "orange",
+    number: 12,
+    book: "Bible"
+  },
+  kids: [
+    {
+      name: "Shiloh",
+      age: 0,
+     },
+     {
+       name: "Shiloh",
+       age: 0,
+     }
+   ]
+
+  
+}
 
 //////////////////////////////////PROBLEMS 13-14//////////////////////////////////
 /*
@@ -315,9 +343,9 @@ const workout = {
 }
 
 //let context1 = myFunc
-//let context1 = window
-//let context1 = global
-// let context1 = workout
+// let context1 = window
+// let context1 = global
+let context1 = workout
 
 ////////////////////PROBLEM 14////////////////////
 /*
@@ -330,6 +358,6 @@ function myFunc() {
 }
 
 //let context2 = myFunc
-// let context2 = window
-//let context2 = global
+let context2 = window
+// let context2 = global
 //let context2 = workout
