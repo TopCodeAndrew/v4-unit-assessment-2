@@ -12,20 +12,216 @@ the font is called 'nunito' and can be found on google fonts
 ***you can use it if you'd like or you can choose your own***
 
 */
+*{
+    font-family: sans-serif;
+}
+body{
+    width: 100vw;
+    position: relative;
+}
+header {
+    background-color: rgb(37, 37, 37);
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    display: flex;
+    flex-direction: row;;
+    width: 100%;
+    height: 80px;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
 
-body {
+}
+
+
+.page-title{
+    color: rgb(42, 171, 226);
+    font-size: 40px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    width: 50%;
+}
+
+.menu{
+    position: absolute;
+    top: 30px;
+    display: flex;
+    width: 400px;
+    justify-content: space-between;
+    right: 100px;
+    color: white;
+    font-size: 20px;
 }
 
 
 
 
+.article-and-sidebar {
+    position: relative;
+    margin-bottom: 80px;
+    display: flex;
+    box-sizing: border-box;
+    top: 50px;
+    justify-content: space-between;
+    margin-left: 10vw;
+    margin-right: 10vw;
 
 
+}
+
+.article{
+    /* background-color: rgba(255, 0, 0, 0.397); */
+    max-width: 50vw;
+    position: relative;
 
 
+}
+
+.article-title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.article-body{
+    font-size: 21px;
+}
 
 
+.sidebar {
+    width:500px;
+    height: 700px;
+    /* background-color: rgba(128, 128, 128, 0.335); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-bottom: 15px;
+    left: 5vw;
+}
+
+.profile-box{
+    width: 230px;
+    height: 270px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 50px -20px;
+    justify-content: space-around;
+}
 
 
+.prof-pic {
+    height: 180px;
+}
+
+.name{
+    position: relative;
+    bottom: 15px;
+    font-weight: 600;
+
+}
 
 
+.popular-articles-box{
+    box-shadow: 0px 0px 50px -20px;
+    margin-top: 50px;
+    width: 230px;
+    height: 320px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+
+
+.articles-title{
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+.article-topics{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+
+.image-gallery{
+    /* background-color: rgba(128, 128, 128, 0.507); */
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: space-around;
+    align-items: space-around;
+    margin-left: 10vw;
+    margin-bottom: 20px;
+}
+
+.image-gallery-titles{
+    display: flex;
+    justify-content: space-between;
+    /* background-color: greenyellow; */
+    height: 20px;
+    margin-bottom: 15px;
+
+}
+
+.image-gallery-box{
+    /* background-color: rgba(255, 0, 0, 0.301); */
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+    position: relative;
+    min-height: 500px;
+}
+
+.dev-mountain-image{
+    width: 220px;
+    margin: 15px;
+    
+}
+
+.img-gallery {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.view-larger{
+    font-size: 16px;
+    font-weight: 300;
+    color: rgb(42, 171, 226);
+    position: relative;
+    top: 20px;
+}
+
+footer {
+    width: 100vw;
+    background-color:rgb(42, 171, 226);
+    height: 70px;
+    margin-top: 20px;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bottom-call-to-action {
+    position: relative;
+    display: flex;
+    width: 20vw;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
