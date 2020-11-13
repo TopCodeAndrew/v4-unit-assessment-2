@@ -147,13 +147,19 @@ const shippingInfo = {
 }
 //DO NOT EDIT CODE ABOVE
 
+
+// console.log(contactInfo)
 ////////////////////PROBLEM 5////////////////////
 /*
   Using the Object.assign method, create a new object called 'helensInfo'
   that combines the contactInfo and shippingInfo objects.
 */
 
-let helensInfo = Object.assign(contactInfo, shippingInfo)
+const helensInfo = Object.assign(contactInfo, shippingInfo)
+
+
+// console.log(contactInfo)
+
 // console.log(helensInfo)
 
 ////////////////////PROBLEM 6////////////////////
@@ -163,7 +169,7 @@ let helensInfo = Object.assign(contactInfo, shippingInfo)
   Overwrite the name property to 'Ellen' and the email address to 'ellen@email.com'.
 */
 
-let ellensInfo = [...helensInfo]
+let ellensInfo = [...helensInfo];
 
 ////////////////////PROBLEM 7////////////////////
 /* 
