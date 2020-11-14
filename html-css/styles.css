@@ -20,7 +20,7 @@ body{
     position: relative;
 }
 header {
-    background-color: rgb(37, 37, 37);
+    background-color: rgba(37, 37, 37, 0.952);
     box-sizing: border-box;
     position: sticky;
     top: 0;
@@ -225,17 +225,15 @@ header {
 }
 
 .bottom-question-box{
-    width: 40px;
-    height: 40px;
-    font-size: 20px;
-    border: solid rgb(19, 77, 102) 3px;
-    border-radius: 50%;
-    position: relative;
-    right: 15px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* background-color: rgb(255, 47, 127); */
+    position: sticky;
+    bottom: 60px;
+    left: 500px;
+    z-index: 1;
+    
 
 }
 
@@ -243,4 +241,21 @@ header {
     font-size: 22px;
     font-weight: 500;
     color:rgb(19, 77, 102) 3px;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border: solid rgb(19, 77, 102) 3px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    right: 30px;
+    top: 54px;
+    padding: 0;
+    /* background-color: greenyellow; */
+    z-index: 1;
 }
